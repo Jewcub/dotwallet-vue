@@ -5,7 +5,7 @@ module.exports = {
   entry: path.resolve(`${__dirname}./../src/index.ts`),
   output: {
     path: path.resolve(`${__dirname}./../dist`),
-    filename: 'v-breadcrumps.js',
+    filename: 'dotwallet-vue.js',
   },
   module: {
     rules: [
