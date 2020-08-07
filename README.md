@@ -1,24 +1,19 @@
 # dotwallet-vue
 
-## Project setup
+## Install
+
 ```
-npm install
+npm install dotwallet-vue
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Use
+
+```js
+// main.js
+import DotWalletLogin from 'dotwallet-vue';
+Vue.use(DotWalletLogin);
 ```
 
-### Compiles and minifies for production
+```html
+<dotwallet-login></dotwallet-login>
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
