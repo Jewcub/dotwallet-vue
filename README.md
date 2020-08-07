@@ -1,5 +1,7 @@
 # dotwallet-vue
 
+[GitHub](https://github.com/Jewcub/dotwallet-vue)
+
 ## Install
 
 ```
