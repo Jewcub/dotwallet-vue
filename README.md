@@ -12,8 +12,16 @@ npm install dotwallet-vue
 
 ```js
 // main.js
-import DotWalletLogin from 'dotwallet-vue';
-Vue.use(DotWalletLogin);
+import Dotwallet from 'dotwallet-vue';
+Vue.use(Dotwallet);
+
+// or in single file component
+import { DotwalletLogin } from 'dotwallet-vue';
+export default {
+  components: {
+    DotwalletLogin,
+  },
+};
 ```
 
 ```html
