@@ -27,7 +27,7 @@
 
 <script>
 import Vue from 'vue';
-export default Vue.extend({
+export default {
   name: 'dotwallet-login',
   props: {
     lang: {
@@ -37,11 +37,11 @@ export default Vue.extend({
         return ['en', 'zh'].indexOf(x) !== -1;
       },
     },
-    appID: {
+    appId: {
       type: String,
       default: '',
     },
-    redirectURL: {
+    redirectUrl: {
       type: String,
       default: '',
     },
@@ -64,14 +64,14 @@ export default Vue.extend({
     };
   },
   methods: {
-    openLink: function () {
-      if (this.appID === '') console.warn('DotWallet Login button missing ap p ID');
-      else if (this.redirectURL === '') console.warn('DotWallet Login button missing redirect URL');
+    openLink: function() {
+      if (this.appId === '') console.warn('DotWallet Login button missing ap p ID');
+      else if (this.redirectUrl === '') console.warn('DotWallet Login button missing redirect URL');
       else
-        window.location.href = `https://www.ddpurse.com/openapi/get_code?app_id=${this.appID}&redirect_uri=${this.redirectURL}auth`;
+        window.location.href = `https://www.ddpurse.com/openapi/get_code?app_id=${this.appId}&redirect_uri=${this.redirectUrl}auth`;
     },
   },
-});
+};
 </script>
 
 <style>
