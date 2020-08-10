@@ -14,8 +14,7 @@ module.exports = {
     umdNamedDefine: true,
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: ['vue-style-loader', 'css-loader'],
       },
@@ -37,6 +36,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           name: '[name].[ext]?[hash]',
+          limit: 8 * 1024,
         },
       },
     ],
